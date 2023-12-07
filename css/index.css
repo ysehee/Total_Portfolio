@@ -1,0 +1,510 @@
+.gnb { position: fixed; z-index: 9; }
+
+.fp-auto-height.fp-section,
+.fp-auto-height .fp-slide,
+.fp-auto-height .fp-tableCell {
+    height: auto !important;
+}
+ 
+.short-con {
+    height: 400px;
+}
+
+/* // 모든 요소, .3초간, .5초 딜레이 후 시작 */
+.section div {
+    transition: all .3s .5s;
+}
+.section.active div {
+    transform: translateY(-100px);
+}
+
+body{
+    margin: 0;
+}
+
+
+#wrap{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    /* margin-top: 60px; */
+}
+html{
+    scroll-behavior: smooth;
+    }
+
+.menu{
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: space-around;
+    overflow: hidden;
+    background-color: rgba(1, 1, 1, 0.6);
+    margin: 0;
+    list-style: none;
+
+    position: fixed;
+    top: 0;
+}
+.menu li a{
+    display: inline-block;
+    text-decoration: none;
+    line-height: 60px;
+    font-size: 18px;
+    color: #fff;
+}
+
+#top,
+#skills,
+#portfolio,
+#aboutMe,
+#contact{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+
+    transition: 0.7s;
+
+    margin: 0;
+}
+#top{
+    background: url(../img/apple-1868496_1280.jpg) no-repeat center / cover;
+    position: relative;
+}
+#skills{background-color:#c9c9c9;}
+
+
+.portfolio{
+    height: 100%;
+    box-sizing: border-box;
+    border: 1px solid #898686;
+    border-radius: 15px;
+    box-shadow: 1px 3px 7px #a9a9a9;
+}
+.portfolio_left{
+    width: 48%;
+    padding: 10px;
+    float: left;
+    box-sizing: border-box;
+    margin-right: 15px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    
+}
+#portfolio h2{
+    width: 100%;
+    display: block;
+    text-align: center;
+    margin: 0;
+    margin-bottom: 34px;
+}
+.pfImg1{
+    width: 60%;
+    height: 50%;
+    /* float: left; */
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+.pfImg23{
+    width: 100%;
+    height: 50%;
+    box-sizing: border-box;
+    overflow: hidden;
+
+    display: flex;
+}
+.pfImg2{
+    width: 50%;
+    box-sizing: border-box;
+}
+.pfImg3{
+    width: 50%;
+    box-sizing: border-box;
+    border: 1px solid;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+.portfolio_right{
+    width: calc(52% - 15px);
+    padding: 50px;
+    float: right;
+    box-sizing: border-box;
+}
+
+
+
+#aboutMe{background-color: #f6f6f6;}
+#contact{
+    /* background-color: rgba(0, 0, 0, 0.2); */
+    /* background: url(../img/contact-us-2993000_1280.jpg) no-repeat / cover; */
+}
+
+#portfolio,
+#aboutMe,
+#contact{
+    padding: 80px 30px 80px 30px;
+    box-sizing: border-box;
+}
+
+
+
+/* 섹션1. 앞표지 */
+
+.helloBox{
+    position: absolute;
+    top: 250px;
+    left: 48%;
+    transform: translateX(-50%);
+
+    font-size: 25px;
+}
+
+.hello,
+.imsehee {
+    display: none;
+    font-size: 25px;
+    font-family:dotum
+}
+.p2,
+.p3 {
+    /* display: block; */
+    /* width: 100%; */
+    /* margin: 0 auto;
+    word-break: break-all; */
+}
+
+    /* ////////////////////////// */
+
+.top_txtbox{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    word-break: break-all;
+}
+
+
+/* 섹션2. 스킬 */
+#skills{
+    box-sizing: border-box;
+    padding: 30px;
+}
+.skillsTitle{
+    height: 104px;
+    line-height: 104px;
+    font-size: 30px;
+    margin: 0;
+    text-align: center;
+    box-sizing: border-box;
+}
+.skill_all{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    margin: auto;
+}
+.skills5{
+    width: calc(100% / 5);
+    height: 18%;
+    float: left;
+    /* margin-bottom: 80px; */
+    box-sizing: border-box;
+    padding: 15px;
+
+    display: flex;
+    gap: 20px;
+}
+.skills{
+    width: calc(100% / 4);
+    height: 22%;
+    float: left;
+    /* margin-bottom: 80px; */
+    box-sizing: border-box;
+    padding: 15px;
+
+    display: flex;
+    gap: 20px;
+}
+.skills5 > .skill_in:nth-child(1){
+    width: 100%;
+}
+
+.skill_in{
+    float: left;
+}
+.skill_in:nth-child(1){
+    width: 40%;
+    height: 100%;
+}
+.skill_in:nth-child(2){
+    width: 60%;
+    height: 100%;
+}
+.skill_img{
+    width: 90px;
+    height: 90px;
+    margin: auto;
+}
+.skill_img1{
+    background: url(../img/tool/html5.png) no-repeat center / contain;
+}
+.skill_img2{
+    background: url(../img/tool/css3.png) no-repeat center / contain;
+}
+.skill_img3{
+    background: url(../img/tool/javascript.png) no-repeat center / contain;
+}
+.skill_img4{
+    background: url(../img/tool/jquery.png) no-repeat center / contain;
+}
+.skill_img5{
+    background: url(../img/tool/java.png) no-repeat center / contain;
+}
+.skill_img6{
+    background: url(../img/tool/spring.png) no-repeat center / contain;
+}
+.skill_img7{
+    background: url(../img/tool/mysql.png) no-repeat center / contain;
+}
+.skill_img8{
+    background: url(../img/tool/GitHub.png) no-repeat center / contain;
+}
+.skill_img9{
+    background: url(../img/tool/ajax.png) no-repeat center / contain;
+}
+.skill_img10{
+    background: url(../img/tool/oracle.png) no-repeat center / contain;
+}
+.skill_img11{
+    background: url(../img/tool/jsp.png) no-repeat center / contain;
+}
+.skill_img12{
+    background: url(../img/tool/mybatis.png) no-repeat center / contain;
+}
+.skill_img13{
+    background: url(../img/tool/json.png) no-repeat center / contain;
+}
+.skill_img14{
+    background: url(../img/tool/tomcat.png) no-repeat center / contain;
+}
+.skill_img15{
+    background: url(../img/tool/sourcetree.png) no-repeat center / contain;
+}
+.skill_img16{
+    background: url(../img/tool/vs.png) no-repeat center / contain;
+}
+.skill_img17{
+    background: url(../img/tool/IntelliJ.png) no-repeat center / contain;
+}
+
+.skillsBox{
+    width: calc(100%);
+    height: 40%;
+    display: flex;
+    flex-wrap: wrap;
+    /* gap: 10px; */
+    box-sizing: border-box;
+}
+.skillsItem{
+    width: calc(100% / 6);
+    height: 230px;
+    box-sizing: border-box;
+    overflow: hidden;
+
+    padding: 24px;
+}
+.skill_img{
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+
+.skill_act{
+    width: 100%;
+    height: 15px;
+    border-radius: 10px;
+    background: #ddd;
+    margin: 20px 0 10px 0;
+    position: relative;
+}
+.skill_color{
+    width: 0;
+    height: 100%;
+    background: olivedrab;
+    border-radius: 10px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+
+/* 포트폴리오 */
+
+
+.portfolioDesc{
+    color: #49494b;
+}
+
+
+.portfolioDesc h3,
+.portfolioDesc h4{
+    margin: 0;
+}
+
+.goToSite{
+    width: 200px;
+    height: 60px;
+    background-color: #87c4ff;
+    color: #fff;
+    border-radius: 15px;
+    line-height: 60px;
+    text-align: center;
+    cursor: pointer;
+}
+
+/* 섹션4. 내 정보 */
+.seheeInfoImg,
+.seheeInfoDesc{
+    height: 100%;
+    /* border: 1px solid; */
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.seheeInfoImg{
+    width: 45%;
+    float: left;
+    background: url(../img/me.png) no-repeat center / contain;
+}
+.seheeInfoDesc{
+    width: 55%;
+    float: left;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    padding: 50px;
+}
+.seheeInfoDesc ul {
+    font-size: 14px;    
+    text-decoration: none;
+    list-style: none;
+}
+
+.seheeInfoDesc li{
+    line-height: 34px;
+}
+.seheeInfoDesc > ul > li:nth-child(1){
+    font-size: 17px;
+    font-weight: 800;
+}
+
+/* 섹션5. 연락망 */
+#contact{
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+    justify-content: center;
+
+    background: url(../img/heart-1046693_1280.jpg) no-repeat center / cover;
+    background-attachment: fixed;
+}
+#contact span{
+    text-align: center;
+    font-size: 24px;
+    font-weight: 800;   
+    
+    display: inline-block;
+
+    position: absolute;
+    top: 241px;
+    left: 50%;
+    
+    transform: translateX(-50%);
+}
+.contactBox {
+    position: absolute;
+    top: 363px;
+    left: 50%;
+    
+    transform: translateX(-50%);
+    
+    display: flex;
+    justify-content: space-around;
+    gap: 200px;
+
+    
+}
+
+.contactItem{
+    width: 250px;
+    height: 250px;
+    /* border: 1px solid; */
+}
+.email{
+    background: url(../img/contact/mail.png) center / cover;
+}
+.kakao{
+    background: url(../img/contact/kakao.png) center / cover;
+}
+.openchat{
+    background: url(../img/contact/openchat.png) center / cover;
+}
+
+/* 탑버튼 */
+.topBtn{    
+    width: 63px;
+    height: 63px;
+    /* border: 1px solid; */
+    border-radius: 50%;
+    background-color: #e8e8e8;
+
+    position: fixed;
+    right: 20px;
+    bottom: 70px;
+    z-index: 99;
+}
+.topBtn > a{
+    width: 100%;
+    height: 100%;
+    display: block;
+    text-align: center;
+    line-height: 63px;
+    text-decoration: none;
+}
+.contactItem{
+    position: relative;
+    color: #e7eff2;
+    font-size: 18px;
+}
+.contactItem p{
+    position: absolute;
+    bottom: -60px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.contactItem a{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 999999999;
+}
+#copyEmail,
+#copyKakaoId,
+.goToSite a{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 999999999;
+    cursor: pointer;
+    
+    background: none;
+    border: none;
+    outline: none;
+}
