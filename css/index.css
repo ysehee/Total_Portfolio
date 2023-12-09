@@ -1,3 +1,33 @@
+@font-face {
+    font-family: 'GangwonEdu_OTFBoldA';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/GangwonEdu_OTFBoldA.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'SUIT-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_suit@1.0/SUIT-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+*{
+    font-family: 'GangwonEdu_OTFBoldA';
+    font-size: 20px;
+}
+#aboutMe .seheeInfoDesc ul li:nth-child(1){
+    font-weight: 900;
+    font-size: 26px;
+    margin-bottom: 11px;
+}
+
+
+
+
+
+/* //////////////////////////////////////////////////// */
+
+
+
 .gnb { position: fixed; z-index: 9; }
 
 .fp-auto-height.fp-section,
@@ -11,12 +41,12 @@
 }
 
 /* // 모든 요소, .3초간, .5초 딜레이 후 시작 */
-.section div {
+/* .section div {
     transition: all .3s .5s;
 }
 .section.active div {
     transform: translateY(-100px);
-}
+} */
 
 body{
     margin: 0;
@@ -51,7 +81,7 @@ html{
     display: inline-block;
     text-decoration: none;
     line-height: 60px;
-    font-size: 18px;
+    font-size: 24px;
     color: #fff;
 }
 
@@ -79,8 +109,14 @@ html{
     background: url(../img/apple-1868496_1280.jpg) no-repeat center / cover;
     position: relative;
 }
-#skills{background-color:#c9c9c9;}
-#aboutMe{background-color: #f6f6f6;}
+#skills{background-color:#e1c4f6;}
+#aboutMe{
+    background-color: #f6f6f6;
+
+
+
+
+}
 
 #portfolio1{
     background-color: #87C4FF;
@@ -102,8 +138,10 @@ html{
     top: 250px;
     left: 48%;
     transform: translateX(-50%);
-
-    font-size: 25px;
+}
+.helloBox p{
+    font-family: 'SUIT-Regular';
+    font-size: 32px;
 }
 
 .hello,
@@ -129,7 +167,7 @@ html{
 .skillsTitle{
     height: 104px;
     line-height: 104px;
-    font-size: 30px;
+    font-size: 50px;
     margin: 0;
     text-align: center;
     box-sizing: border-box;
@@ -197,13 +235,13 @@ html{
     background: url(../img/tool/jquery.png) no-repeat center / contain;
 }
 .skill_img5{
-    background: url(../img/tool/java.png) no-repeat center / contain;
+    background: url(../img/tool/java.png) no-repeat center / 130%;
 }
 .skill_img6{
     background: url(../img/tool/spring.png) no-repeat center / contain;
 }
 .skill_img7{
-    background: url(../img/tool/mysql.png) no-repeat center / contain;
+    background: url(../img/tool/mysql.png) no-repeat center / 80%;
 }
 .skill_img8{
     background: url(../img/tool/GitHub.png) no-repeat center / contain;
@@ -215,10 +253,10 @@ html{
     background: url(../img/tool/oracle.png) no-repeat center / contain;
 }
 .skill_img11{
-    background: url(../img/tool/jsp.png) no-repeat center / contain;
+    background: url(../img/tool/jsp.png) no-repeat center / 70%;
 }
 .skill_img12{
-    background: url(../img/tool/mybatis.png) no-repeat center / contain;
+    background: url(../img/tool/mybatis.png) no-repeat center / 160%;
 }
 .skill_img13{
     background: url(../img/tool/json.png) no-repeat center / contain;
@@ -227,7 +265,7 @@ html{
     background: url(../img/tool/tomcat.png) no-repeat center / contain;
 }
 .skill_img15{
-    background: url(../img/tool/sourcetree.png) no-repeat center / contain;
+    background: url(../img/tool/sourcetree.png) no-repeat center / 110%;
 }
 .skill_img16{
     background: url(../img/tool/vs.png) no-repeat center / contain;
@@ -279,7 +317,11 @@ html{
 
 
 /* 포트폴리오1 - 블루호라이즌 */
-
+#portfolio1 h2,
+#portfolio2 h2{
+    color: #fff;
+    font-size: 32px;
+}
 .portfolio{
     background-color: #Ffff;
 }
@@ -301,16 +343,17 @@ html{
 
 .blueHz_t_img,
 .blueHz_b_img{
-    height: 50%;
     box-sizing: border-box;
     overflow: hidden;
     margin: 0 auto;
 }
 .blueHz_t_img{
-    width: 80%;
+    width: 70%;
+    height: 60%;
 }
 .blueHz_b_img{
     width: 80%;
+    height: 40%;
 }
 
 .blueHz_b_img{
@@ -324,9 +367,18 @@ html{
 }
 .pfImg2,
 .pfImg3{
-    width: 50%;
-    height: 100%;
-    box-sizing: border-box;
+    border: 1px solid #707070;
+    overflow: hidden;
+    padding-bottom: 25px;
+}
+.pfImg2{
+    width: 40%;
+    scale: 0.9;
+}
+.pfImg3{
+    width: 60%;
+    border-radius: 15px;
+    scale: 0.9;
 }
 .pfImg2 img,
 .pfImg3 img{
@@ -334,23 +386,21 @@ html{
     height: 100%;
     box-sizing: border-box;
 }
+.pfDesc li{
+    list-style: none;
+    margin-bottom: 8px;
 
-
-.portfolioDesc,
-.portfolioDesc2{
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
 }
+
 .goToGit{
     width: 180px;
-    height: 60px;
+    height: 52px;
     border: 1px solid;
     border-radius: 15px;
     text-align: center;
     line-height: 60px;
     color: #fff;
+    margin-left: 35px;
 }
 .goToGtit_blueHz{
     background-color: #87c4ff;
@@ -360,14 +410,66 @@ html{
     text-align: center;
 }
 
+.pfIcon{
+    width: 20px;
+    height: 20px;
+    box-sizing: border-box;
+
+    display: inline-block;
+}
+.pfDesc li p{
+    display: inline-block;
+    margin: 0;
+}
+.skillsItems div{
+    display: inline-block;
+    margin: 0;
+    border: 1px solid;
+    background-color: #87c4ff;
+    border-radius: 20px;
+    padding: 10px;
+    color: #fff;
+}
+.usedSkills{
+    margin-bottom: 30px;
+}
+.skillsItems2 div{
+    display: inline-block;
+    margin: 0;
+    border: 1px solid;
+    background-color: #003148;
+    border-radius: 20px;
+    padding: 10px;
+    color: #fff;
+}
+.pfDesc .copyright{
+    font-size: 5px;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+.pfDesc h3{
+    font-size: 28px;
+    font-weight: 800;
+    margin: 0;
+    margin-bottom: 20px;
+}
+.pfInfo{
+    margin-top: 35px;
+    margin-bottom: 40px;
+}
+.siteNameBlueHz{
+    background-color: #87c4ff;
+    margin: 0;
+}
+
 
 
 /* 포트폴리오2 - 하고*/
-
-#portfolio2 h2{
-    color: #fff;
+.portfolio2{
+    background-color: #fff;
 }
-
 .portfolio2 .portfolio_left{
     display: flex;
     flex-direction: column;
@@ -387,28 +489,50 @@ html{
     box-sizing: border-box;
 }
 .pfHagoImg1{
-    width: 70%;
-    height: 60%;
+    width: 65%;
+    height: 55%;
 }
 .pfHagoImg2{
-    width: 80%;
-    height: 40%;
+    width: 55%;
+    height: 45%;
+    scale: 0.9;
+    border: 1px solid #707070;
     background: url(../img/hagoImg2.png) no-repeat top / 70%;
 }
-.portfolio_right{
-    
-}
 
-.goToGtit_hago{
+.goToGtit_HAGO{
     background-color: #003148;
     color: #fff;
 }
+.siteName{
+    display: inline-block;
+    margin: 0;
+    color: #Fff;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+.siteNameHAGO{
+    background-color: #003148;
+}
 
+.pfInfoHAGO P{
+    margin: 0;
+    margin-bottom: 8px;
+}
+.siteNameBlueHz{
+    margin: 0;
+}
 
 
 
 
 /* 섹션4. 내 정보 */
+#aboutMe h2{
+    margin: 0;
+    font-size: 40px;
+    text-align: center;
+    margin-top: 30px;
+}
 .seheeInfoImg,
 .seheeInfoDesc{
     height: 100%;
@@ -427,7 +551,7 @@ html{
     
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
 .seheeInfoDesc ul {
     font-size: 14px;    
@@ -455,20 +579,22 @@ html{
 }
 #contact span{
     text-align: center;
-    font-size: 24px;
-    font-weight: 800;   
-    
-    display: inline-block;
+    font-size: 40px;
+    font-weight: 800;
 
+    display: inline-block;
+    
     position: absolute;
-    top: 241px;
+    top: 300px;
     left: 50%;
+    
+    transform: translateX(-50%);
     
     transform: translateX(-50%);
 }
 .contactBox {
     position: absolute;
-    top: 363px;
+    top: 380px;
     left: 50%;
     
     transform: translateX(-50%);
@@ -545,4 +671,7 @@ html{
     background: none;
     border: none;
     outline: none;
+}
+.contactItem{
+    cursor: pointer;
 }
