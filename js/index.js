@@ -97,7 +97,7 @@ function tmp(i, num) {
         if(sec3_top - 300 <= s_top) 
             if(sec3_chk) {
                 sec3_chk = false;{
-                let array = [95,95,90,85,90,90,95,90,90,90,85,90];
+                let array = [95,95,90,85,90,90,90,90,85,80,85,90];
                 for(let i=0; i<skill_length; i++) {
                     tmp(i, array[i]) ;
                 } 
