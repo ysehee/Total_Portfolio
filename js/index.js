@@ -62,6 +62,15 @@ function goGithub2()  {
     window.open('https://github.com/ysehee/HAGO_Front_Portfolio.git') ;
 }
 
+// 프론트엔드 프로젝트 (첫 플젝) 깃허브 주소로 이동
+function goHagoSite()  {
+    window.open('https://ysehee.github.io/HAGO_FrontPortfolio/HTML/1.%20index.html') ;
+}
+
+
+
+
+
 // skills 영역 게이지 바 채워지기
 
 $(document).ready(function(){

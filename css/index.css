@@ -499,8 +499,15 @@ html{
     border: 1px solid #707070;
     background: url(../img/hagoImg2.png) no-repeat top / 70%;
 }
+.goToHagoProject{
+    display: flex;
+}
 
 .goToGtit_HAGO{
+    background-color: #003148;
+    color: #fff;
+}
+.goSite_HAGO{
     background-color: #003148;
     color: #fff;
 }
