@@ -62,9 +62,9 @@ function goGithub2()  {
     window.open('https://github.com/ysehee/HAGO_Front_Portfolio.git') ;
 }
 
-// 프론트엔드 프로젝트 (첫 플젝) 깃허브 주소로 이동
+// 프론트엔드 프로젝트 (첫 플젝) 웹사이트 주소로 이동
 function goHagoSite()  {
-    window.open('https://ysehee.github.io/HAGO_FrontPortfolio/HTML/1.%20index.html') ;
+    window.open('https://ysehee.github.io/HAGO_Front_Portfolio/HTML/1.%20index.html') ;
 }
 
 
